@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"log"
+	"net/http"
 )
 
-const webContent = "dev-ops-ninja:v99"
+const webContent = "augustoscher:v99"
 
 func main() {
 	http.HandleFunc("/", helloHandler)
+	fmt.Printf("Running on port 80...")
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
 
