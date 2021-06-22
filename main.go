@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-const webContent = "augustoscher:v99"
+const webContent = "augustoscher:v100"
 
 func main() {
 	http.HandleFunc("/", helloHandler)
